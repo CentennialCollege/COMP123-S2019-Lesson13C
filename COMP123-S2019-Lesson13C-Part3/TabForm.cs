@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace COMP123_S2019_Lesson13C_Part3
 {
-    public partial class Form1 : Form
+    public partial class TabForm : Form
     {
-        public Form1()
+        public TabForm()
         {
             InitializeComponent();
+        }
+
+        private void NextButton_Click(object sender, EventArgs e)
+        {
+            MainTabControl.SelectedIndex++;
         }
     }
 }
